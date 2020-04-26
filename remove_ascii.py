@@ -9,6 +9,6 @@ with codecs.open('test.txt', mode='r', encoding='UTF-8', errors='strict', buffer
 
     for line in f:
            line=line.encode('ascii','ignore').decode('UTF-8','ignore')
-           f2.write(row['question2'])
+           f2.write(line)
     
     f2.close()
